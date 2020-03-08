@@ -1,5 +1,5 @@
 server:
-  port: 9001
+  port: 9051
 spring:
   application.name: greetings-service
   cloud:
@@ -11,4 +11,6 @@ spring:
 
 eureka:
   client:
-    serviceUrl.defaultZone: http://localhost:8082/eureka/
+    serviceUrl.defaultZone: http://localhost:8761/eureka/
+    region: default
+    registryFetchIntervalSeconds: 5
