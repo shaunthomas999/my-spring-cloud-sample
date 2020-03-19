@@ -1,0 +1,16 @@
+server:
+  port: 9052
+spring:
+  application.name: names-service
+  cloud:
+    config:
+      name: ${spring.application.name}
+      discovery:
+        service-id: config-server
+        enabled: true
+
+eureka:
+  client:
+    serviceUrl.defaultZone: http://localhost:8761/eureka/
+    region: default
+    registryFetchIntervalSeconds: 5
