@@ -1,4 +1,4 @@
-package com.shaunthomas999.config;
+package com.shaunthomas999.admin;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -6,7 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.Assert.assertTrue;
 
 @SpringBootTest
-public class ConfigApplicationTest {
+public class AdminServerApplicationTest {
 
   @Test
   public void contextLoads() {

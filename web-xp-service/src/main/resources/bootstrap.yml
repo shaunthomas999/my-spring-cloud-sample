@@ -1,0 +1,33 @@
+server:
+  port: 9050
+spring:
+  application.name: web-xp-service
+# No need to add following properties for spring-cloud. It is only required when used with spring-boot.
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:8887
+#        username: admin
+#        password: admin
+  cloud:
+    config:
+      name: ${spring.application.name}
+      discovery:
+        service-id: config-server
+        enabled: true
+
+eureka:
+  client:
+    serviceUrl.defaultZone: http://localhost:8761/eureka/
+    region: default
+    registryFetchIntervalSeconds: 5
+
+# - https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS

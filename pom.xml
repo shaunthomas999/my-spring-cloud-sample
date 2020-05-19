@@ -11,9 +11,13 @@
 
   <modules>
     <module>config-server</module>
+    <module>service-registry</module>
+
+    <module>admin-server</module>
+
     <module>greetings-service</module>
     <module>names-service</module>
-    <module>service-registry</module>
+    <module>web-xp-service</module>
   </modules>
 
   <properties>
@@ -27,6 +31,9 @@
 
     <spring-boot.version>2.1.13.RELEASE</spring-boot.version>
     <spring-cloud.version>Greenwich.SR5</spring-cloud.version>
+
+    <spring-boot-admin-server.version>2.2.2</spring-boot-admin-server.version>
+    <spring-boot-admin-server-ui.version>1.5.7</spring-boot-admin-server-ui.version>
 
     <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
   </properties>
@@ -46,6 +53,22 @@
         <version>${spring-boot.version}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>de.codecentric</groupId>
+        <artifactId>spring-boot-admin-starter-server</artifactId>
+        <version>${spring-boot-admin-server.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>de.codecentric</groupId>
+        <artifactId>spring-boot-admin-starter-client</artifactId>
+        <version>${spring-boot-admin-server.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>de.codecentric</groupId>
+        <artifactId>spring-boot-admin-server-ui-login</artifactId>
+        <version>${spring-boot-admin-server-ui.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

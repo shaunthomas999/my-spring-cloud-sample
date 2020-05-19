@@ -1,4 +1,4 @@
-package com.shaunthomas999.greetings;
+package com.shaunthomas999.web;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -6,7 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.Assert.assertTrue;
 
 @SpringBootTest
-public class GreetingsServiceApplicationTest {
+public class WebXpServiceApplicationTest {
 
   @Test
   public void contextLoads() {

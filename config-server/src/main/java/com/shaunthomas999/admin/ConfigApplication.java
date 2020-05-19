@@ -1,4 +1,4 @@
-package com.shaunthomas999.config;
+package com.shaunthomas999.admin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
