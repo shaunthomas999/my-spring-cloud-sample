@@ -18,6 +18,7 @@
     <module>greetings-service</module>
     <module>names-service</module>
     <module>web-xp-service</module>
+    <module>spring-cloud-gateway</module>
   </modules>
 
   <properties>
